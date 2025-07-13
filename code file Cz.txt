@@ -1,0 +1,55 @@
+Task 1 
+
+...Investment Avenues = COUNTROWS(FILTER('Data_set 2','Data_set 2'[Investment_Avenues] ="YES"))
+Average Age = AVERAGE('Data_set 2'[age])
+NO Investment Avenues = COUNTROWS(FILTER('Data_set 2','Data_set 2'[Investment_Avenues] ="NO"))......
+
+Task 2
+
+....Male = COUNTROWS(FILTER('Data_set 2','Data_set 2'[gender]="MALE"))
+Female = COUNTROWS(FILTER('Data_set 2','Data_set 2'[gender]="FEMALE"))
+Total debetures = SUM('Data_set 2'[Debentures])
+Total Equity Market = SUM('Data_set 2'[Equity_Market])
+Total Fixed Deposit = SUM('Data_set 2'[Fixed_Deposits])
+Total Gold = SUM('Data_set 2'[Gold])
+Total Government Bonds = SUM('Data_set 2'[Government_Bonds])
+Total Mutual Funds = SUM('Data_set 2'[Mutual_Funds])
+Total PPF = SUM('Data_set 2'[PPF])....
+
+Task 3
+
+....Pearson Correlation = 
+DIVIDE(
+SUMX('Data_set 2','Data_set 2'[Avenue Numericals]*'Data_set 2'[Objective Numericals]) - 
+SUMX('Data_set 2','Data_set 2'[Objective Numericals])*SUMX('Data_set 2','Data_set 2'[Avenue Numericals]),
+SQRT(
+    (SUMX('Data_set 2','Data_set 2'[Objective Numericals]^2) - (SUMX('Data_set 2','Data_set 2'[Avenue Numericals]^2))
+    *
+    (SUMX('Data_set 2','Data_set 2'[Avenue Numericals]^2) - (SUMX('Data_set 2','Data_set 2'[Avenue Numericals]^2))
+  )
+) )).....
+
+Task 4
+
+....Equity = COUNTROWS(FILTER('Data_set 2','Data_set 2'[Avenue]="Equity"))
+Fixed Deposits = COUNTROWS(FILTER('Data_set 2','Data_set 2'[Avenue]="Fixed Deposits"))
+Mutual Fund = COUNTROWS(FILTER('Data_set 2','Data_set 2'[Avenue]="Mutual Fund"))
+Public Provident Fund = COUNTROWS(FILTER('Data_set 2','Data_set 2'[Avenue]="Public Provident Fund")).....
+
+
+Task 5 
+
+....Better Returns = COUNTROWS(FILTER('Data_set 2','Data_set 2'[Reason_Mutual] = "Better Returns"))
+Fund Diversification = COUNTROWS(FILTER('Data_set 2','Data_set 2'[Reason_Mutual] = "Fund Diversification"))
+Tax Benefits = COUNTROWS(FILTER('Data_set 2','Data_set 2'[Reason_Mutual] = "Tax Benefits"))....
+
+Task 6
+
+............
+
+Task 7
+
+....Average Age = AVERAGE('Data_set 2'[age])
+Male = COUNTROWS(FILTER('Data_set 2','Data_set 2'[gender]="MALE"))
+Female = COUNTROWS(FILTER('Data_set 2','Data_set 2'[gender]="FEMALE"))....
+
